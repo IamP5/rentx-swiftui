@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>352206358006-9qb664e6pno0c02htg6d99tp07s30rul.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.352206358006-9qb664e6pno0c02htg6d99tp07s30rul</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYCUbAdtPSBbNTdQBxHYFGmoiiKzLKC9I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>352206358006</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tuba.rentX</string>
+	<key>PROJECT_ID</key>
+	<string>rentx-93680</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rentx-93680.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:352206358006:ios:d0add7ed1a43457f12f3d7</string>
+</dict>
+</plist>
