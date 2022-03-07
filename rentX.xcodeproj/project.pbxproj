@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9509840D27D44ABC00B2102D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509840C27D44ABC00B2102D /* UserModel.swift */; };
+		950BBA3F27D417CC0025FFA3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950BBA3E27D417CC0025FFA3 /* LoginViewModel.swift */; };
 		953BE41B27D3D1110083CB32 /* rentXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE41A27D3D1110083CB32 /* rentXApp.swift */; };
 		953BE41F27D3D1120083CB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953BE41E27D3D1120083CB32 /* Assets.xcassets */; };
 		953BE42227D3D1120083CB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953BE42127D3D1120083CB32 /* Preview Assets.xcassets */; };
 		953BE42C27D3D28E0083CB32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE42B27D3D28E0083CB32 /* LoginView.swift */; };
+		953BE43727D3F23C0083CB32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 953BE43627D3F23C0083CB32 /* GoogleService-Info.plist */; };
+		95C00B3E27D5A63300A11370 /* Pods_rentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */; };
+		95C00B3F27D5A63300A11370 /* Pods_rentX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		95C00B4027D5A63300A11370 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95C00B3F27D5A63300A11370 /* Pods_rentX.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		21B1282C25CEEF006A37BEF5 /* Pods-rentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentX.debug.xcconfig"; path = "Target Support Files/Pods-rentX/Pods-rentX.debug.xcconfig"; sourceTree = "<group>"; };
+		9509840C27D44ABC00B2102D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		950BBA3E27D417CC0025FFA3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		953BE41727D3D1110083CB32 /* rentX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953BE41A27D3D1110083CB32 /* rentXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentXApp.swift; sourceTree = "<group>"; };
 		953BE41E27D3D1120083CB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953BE42127D3D1120083CB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		953BE42B27D3D28E0083CB32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		953BE43627D3F23C0083CB32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E698E67AFEA5341DCA830CC3 /* Pods-rentX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentX.release.xcconfig"; path = "Target Support Files/Pods-rentX/Pods-rentX.release.xcconfig"; sourceTree = "<group>"; };
+		FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C00B3E27D5A63300A11370 /* Pods_rentX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7A64534A720C9A2E1FCDAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		953BE40E27D3D1110083CB32 = {
 			isa = PBXGroup;
 			children = (
+				953BE43627D3F23C0083CB32 /* GoogleService-Info.plist */,
 				953BE41927D3D1110083CB32 /* rentX */,
 				953BE41827D3D1110083CB32 /* Products */,
+				FCDF40D9BE66B441E748696D /* Pods */,
+				2A7A64534A720C9A2E1FCDAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +117,7 @@
 		953BE42927D3D2690083CB32 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9509840C27D44ABC00B2102D /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,8 +125,18 @@
 		953BE42A27D3D2700083CB32 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				950BBA3E27D417CC0025FFA3 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FCDF40D9BE66B441E748696D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21B1282C25CEEF006A37BEF5 /* Pods-rentX.debug.xcconfig */,
+				E698E67AFEA5341DCA830CC3 /* Pods-rentX.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953BE42527D3D1120083CB32 /* Build configuration list for PBXNativeTarget "rentX" */;
 			buildPhases = (
+				B5E094BD655D5E363279DF68 /* [CP] Check Pods Manifest.lock */,
 				953BE41327D3D1110083CB32 /* Sources */,
 				953BE41427D3D1110083CB32 /* Frameworks */,
 				953BE41527D3D1110083CB32 /* Resources */,
+				A25C6D94EF87C8EAC0DA00C9 /* [CP] Embed Pods Frameworks */,
+				95C00B4027D5A63300A11370 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,10 +202,53 @@
 			files = (
 				953BE42227D3D1120083CB32 /* Preview Assets.xcassets in Resources */,
 				953BE41F27D3D1120083CB32 /* Assets.xcassets in Resources */,
+				953BE43727D3F23C0083CB32 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A25C6D94EF87C8EAC0DA00C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rentX/Pods-rentX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rentX/Pods-rentX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rentX/Pods-rentX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E094BD655D5E363279DF68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rentX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		953BE41327D3D1110083CB32 /* Sources */ = {
@@ -163,6 +257,8 @@
 			files = (
 				953BE42C27D3D28E0083CB32 /* LoginView.swift in Sources */,
 				953BE41B27D3D1110083CB32 /* rentXApp.swift in Sources */,
+				9509840D27D44ABC00B2102D /* UserModel.swift in Sources */,
+				950BBA3F27D417CC0025FFA3 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -287,6 +384,7 @@
 		};
 		953BE42627D3D1120083CB32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B1282C25CEEF006A37BEF5 /* Pods-rentX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +404,61 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuba.rentX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -316,6 +469,7 @@
 		};
 		953BE42727D3D1120083CB32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E698E67AFEA5341DCA830CC3 /* Pods-rentX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +489,61 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuba.rentX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
