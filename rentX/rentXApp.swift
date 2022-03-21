@@ -10,6 +10,7 @@ import Firebase
 
 @main
 struct rentXApp: App {
+    @StateObject var loginViewModel: LoginViewModel = LoginViewModel()
     
     init() {
         FirebaseApp.configure()
@@ -17,7 +18,11 @@ struct rentXApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            if(loginViewModel.isLogged) {
+                HomeView()
+            } else {
+                LoginView()
+            }
         }
     }
 }
