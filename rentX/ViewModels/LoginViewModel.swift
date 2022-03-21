@@ -13,13 +13,9 @@ class LoginViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var userData: UserModel = UserModel(id: "", name: "", isAdmin: false)
-    
-    init() {
-        
-    }
+    @Published var isLogged: Bool = true;
     
     func login() {
-        let database = Firestore.firestore()
         
         Auth.auth()
             .signIn(withEmail: email, password: password) { (account, error) in
@@ -39,17 +35,18 @@ class LoginViewModel: ObservableObject {
                         return
                     }
                     
+                    let database = Firestore.firestore()
                     let docRef = database.collection("users").document(userId)
-                    print(userId)
                     
                     docRef.getDocument { (document, error) in
                         if let document = document, document.exists
                         {
-                            self.userData = UserModel(id: userId ,name: document["name"] as! String, isAdmin: document["admin"] as! Bool)
-                            print(self.userData)
+                            self.userData = UserModel(id: userId, name: document["name"] as! String, isAdmin: document["admin"] as! Bool)
+                            self.isLogged = true
                         }
                     }
                 }
             }
+        print(self.userData)
     }
 }
