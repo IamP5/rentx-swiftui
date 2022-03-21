@@ -6,16 +6,16 @@
 //
 
 import Foundation
-
+import Firebase
 
 struct UserModel: Identifiable, Codable{
-    let id : String
-    let name: String
-    let admin: Bool
+    var id: String
+    var name: String
+    var isAdmin: Bool
     
-    init(id: String , name: String, isAdmin: Bool) {
+    init(id: String, name: String, isAdmin: Bool) {
         self.id = id
         self.name = name
-        self.admin = isAdmin
+        self.isAdmin = isAdmin
     }
 }
