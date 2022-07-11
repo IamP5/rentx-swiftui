@@ -30,4 +30,27 @@ struct CarModel: Identifiable, Codable {
             accessories,
             photos
     }
+    
+    func getAccessoryImage(accessoryType: String) -> String {
+        switch accessoryType {
+            case "speed":
+                return "speed"
+            case "acceleration":
+                return "acceleration"
+            case "turning_diameter":
+                return "force"
+            case "gasoline_motor":
+                return "gasoline"
+            case "electric_motor":
+                return "energy"
+            case "hybrid_motor":
+                return "hybrid"
+            case "exchange":
+                return "exchange"
+            case "seats":
+                return "people"
+            default:
+                return "car"
+        }
+    }
 }

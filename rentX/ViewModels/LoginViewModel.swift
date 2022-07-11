@@ -15,7 +15,8 @@ class LoginViewModel: ObservableObject {
     @Published var userData: UserModel = UserModel(id: "", name: "", isAdmin: false)
     @Published var isLogged: Bool = false;
     
-    func login() {
+    func login() -> String {
+        var loginStatus: String = ""
         
         Auth.auth()
             .signIn(withEmail: email, password: password) { (account, error) in
@@ -25,9 +26,9 @@ class LoginViewModel: ObservableObject {
                     let errorPattern2: String = "The password is invalid or the user does not have a password."
                     
                     if (error == errorPattern || error == errorPattern2) {
-                        print("E-mail e/ou senha inválida")
+                        loginStatus = "E-mail e/ou senha inválida"
                     } else {
-                        print("Não foi possível realizar o login")
+                        loginStatus = "Não foi possível realizar o login"
                     }
                 } else {
                     guard let userId = account?.user.uid else {
@@ -43,10 +44,13 @@ class LoginViewModel: ObservableObject {
                         {
                             self.userData = UserModel(id: userId, name: document["name"] as! String, isAdmin: document["admin"] as! Bool)
                             self.isLogged = true
+                            
+                           loginStatus = "Success"
                         }
                     }
                 }
             }
-        print(self.userData)
+        
+        return loginStatus
     }
 }

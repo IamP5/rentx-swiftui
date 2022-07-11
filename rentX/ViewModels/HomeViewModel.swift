@@ -16,7 +16,6 @@ class HomeViewModel: ObservableObject {
     }
     
     func getCars() {
-        
         CarService.shared.getCars { (result) in
             switch result {
                 case.success(let carsData):

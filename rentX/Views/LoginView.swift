@@ -11,7 +11,18 @@ struct LoginView: View {
     
     @StateObject var loginViewModel: LoginViewModel = LoginViewModel()
     
+    @State private var loginFailedPopup = false;
+    @State private var popupMessage: String = "";
+    
     var body: some View {
+        if (loginViewModel.isLogged) {
+            HomeView()
+        } else {
+            loginContent
+        }
+    }
+    
+    var loginContent: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [
                 .red,
@@ -58,13 +69,19 @@ struct LoginView: View {
                         .padding(.vertical)
                 }
                 .padding(.horizontal, 26)
+                .alert(isPresented: self.$loginFailedPopup, content: {
+                    Alert(title: Text(popupMessage), dismissButton: .cancel(Text("Try again")))
+                })
             }
         }
-        .edgesIgnoringSafeArea(.all);
+        .ignoresSafeArea(.container);
     }
     
     func handleLogin() {
-        loginViewModel.login()
+        let loginStatus = loginViewModel.login()
+        self.popupMessage = loginStatus
+        
+        loginFailedPopup = loginStatus != "Success"
     }
 }
 

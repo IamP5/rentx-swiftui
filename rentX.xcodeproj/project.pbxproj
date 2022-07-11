@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9509840D27D44ABC00B2102D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509840C27D44ABC00B2102D /* UserModel.swift */; };
 		950BBA3F27D417CC0025FFA3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950BBA3E27D417CC0025FFA3 /* LoginViewModel.swift */; };
+		9512C47327F105800014F786 /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9512C47227F105800014F786 /* CarDetailsView.swift */; };
+		952A0D2B2809E66700798CE3 /* HorizonCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A0D2A2809E66700798CE3 /* HorizonCalendar.swift */; };
 		953BE41B27D3D1110083CB32 /* rentXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE41A27D3D1110083CB32 /* rentXApp.swift */; };
 		953BE41F27D3D1120083CB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953BE41E27D3D1120083CB32 /* Assets.xcassets */; };
 		953BE42227D3D1120083CB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953BE42127D3D1120083CB32 /* Preview Assets.xcassets */; };
@@ -17,6 +19,7 @@
 		9559BA6127DAB8780009AA4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559BA6027DAB8780009AA4B /* HomeView.swift */; };
 		9559BA6527DABB5A0009AA4B /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559BA6427DABB5A0009AA4B /* ThemeColors.swift */; };
 		9559BA6A27DACFAE0009AA4B /* CarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559BA6927DACFAE0009AA4B /* CarItemView.swift */; };
+		95A66F862800D38000E4531C /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A66F852800D38000E4531C /* ScheduleView.swift */; };
 		95C00B3E27D5A63300A11370 /* Pods_rentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */; };
 		95C00B3F27D5A63300A11370 /* Pods_rentX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95D59E3727E7CACB00B9E5F0 /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D59E3627E7CACB00B9E5F0 /* CarService.swift */; };
@@ -44,6 +47,8 @@
 		21B1282C25CEEF006A37BEF5 /* Pods-rentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentX.debug.xcconfig"; path = "Target Support Files/Pods-rentX/Pods-rentX.debug.xcconfig"; sourceTree = "<group>"; };
 		9509840C27D44ABC00B2102D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		950BBA3E27D417CC0025FFA3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9512C47227F105800014F786 /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
+		952A0D2A2809E66700798CE3 /* HorizonCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonCalendar.swift; sourceTree = "<group>"; };
 		953BE41727D3D1110083CB32 /* rentX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953BE41A27D3D1110083CB32 /* rentXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentXApp.swift; sourceTree = "<group>"; };
 		953BE41E27D3D1120083CB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		9559BA6027DAB8780009AA4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9559BA6427DABB5A0009AA4B /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		9559BA6927DACFAE0009AA4B /* CarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItemView.swift; sourceTree = "<group>"; };
+		95A66F852800D38000E4531C /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		95D59E3627E7CACB00B9E5F0 /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
 		95D59E3827E7EE8F00B9E5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95D77D9A27E4FB58006DEE7B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +87,22 @@
 				FB8F017A743FCA4BC6C4D5EB /* Pods_rentX.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9512C47127F105530014F786 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9559BA6927DACFAE0009AA4B /* CarItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		952A0D292809E63200798CE3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				952A0D2A2809E66700798CE3 /* HorizonCalendar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		953BE40E27D3D1110083CB32 = {
@@ -129,9 +151,10 @@
 		953BE42827D3D25C0083CB32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95A66F842800D33800E4531C /* ScheduleViews */,
+				95EFDD9F28008A2A00C4071F /* CarViews */,
 				953BE42B27D3D28E0083CB32 /* LoginView.swift */,
 				9559BA6027DAB8780009AA4B /* HomeView.swift */,
-				9559BA6927DACFAE0009AA4B /* CarItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +185,15 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		95A66F842800D33800E4531C /* ScheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+				952A0D292809E63200798CE3 /* Components */,
+				95A66F852800D38000E4531C /* ScheduleView.swift */,
+			);
+			path = ScheduleViews;
+			sourceTree = "<group>";
+		};
 		95D59E3527E7CA1800B9E5F0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +210,15 @@
 				95D77DA127E4FFA4006DEE7B /* AccessoryModel.swift */,
 			);
 			path = Car;
+			sourceTree = "<group>";
+		};
+		95EFDD9F28008A2A00C4071F /* CarViews */ = {
+			isa = PBXGroup;
+			children = (
+				9512C47127F105530014F786 /* Components */,
+				9512C47227F105800014F786 /* CarDetailsView.swift */,
+			);
+			path = CarViews;
 			sourceTree = "<group>";
 		};
 		FCDF40D9BE66B441E748696D /* Pods */ = {
@@ -305,9 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9512C47327F105800014F786 /* CarDetailsView.swift in Sources */,
 				953BE42C27D3D28E0083CB32 /* LoginView.swift in Sources */,
 				953BE41B27D3D1110083CB32 /* rentXApp.swift in Sources */,
+				95A66F862800D38000E4531C /* ScheduleView.swift in Sources */,
 				95D77DA027E4FF5C006DEE7B /* RentModel.swift in Sources */,
+				952A0D2B2809E66700798CE3 /* HorizonCalendar.swift in Sources */,
 				9559BA6A27DACFAE0009AA4B /* CarItemView.swift in Sources */,
 				95D77D9B27E4FB58006DEE7B /* HomeViewModel.swift in Sources */,
 				9509840D27D44ABC00B2102D /* UserModel.swift in Sources */,

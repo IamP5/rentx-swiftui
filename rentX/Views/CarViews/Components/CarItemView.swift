@@ -15,8 +15,9 @@ struct CarItemView: View {
             VStack(alignment: .leading) {
                 Text(car.brand)
                     .font(.system(size: 13))
-                    .foregroundColor(.gray)
+                    .foregroundColor(ThemeColors.TEXT_DETAIL)
                 Text(car.model)
+                    .foregroundColor(ThemeColors.TITLE)
                 
                 Spacer()
                 
@@ -27,18 +28,44 @@ struct CarItemView: View {
                             .foregroundColor(.gray)
                         
                         Text("R$\(car.rent.price)")
+                            .foregroundColor(ThemeColors.MAIN)
                     }
                     
-                    Text("I")
-                        .padding(.horizontal, 10)
+                    Spacer()
+                    
+                    Image(car.getAccessoryImage(accessoryType: car.fuelType))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 20)
                 }
             }
             .padding(20)
+            .frame(maxWidth: 140, maxHeight: .infinity)
             
             Spacer()
             
-            AsyncImage(url: URL(string: car.thumb))
-                .imageScale(.small)
+            ZStack {
+                AsyncImage(
+                    url: URL(string: car.thumb),
+                    transaction: Transaction(animation: .easeInOut)
+                ) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView()
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                            .transition(.scale(scale: 0.6, anchor: .center))
+                    case .failure:
+                        Image(systemName: "wifi.slash")
+                    @unknown default:
+                        EmptyView()
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         .frame(width: 340, height: 130)
         .background(.white)

@@ -15,7 +15,7 @@ class CarService {
     
     init() {
         componentURL.scheme = "http"
-        componentURL.host = "localhost"
+        componentURL.host = "192.168.0.56"
         componentURL.port = 3333
     }
    
